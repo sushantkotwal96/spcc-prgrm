@@ -1,0 +1,14 @@
+MACRO 
+INCR ?
+A 1, DATA ?
+A 1, DATA ?
+MEND ?
+MACRO
+INCR1 &ARG1 &ARG2 ?
+A 3, &ARG1 ?
+A 4, &ARG2 ?
+MEND ?
+INCR ?
+L 1, 5
+INCR1 DATA1 DATA2 ?
+L 1, 1 ?
